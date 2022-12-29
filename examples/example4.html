@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Accordion Slider - Example 4</title>
+
+<link rel="stylesheet" type="text/css" href="../build/accordion-slider.css" media="screen"/>
+<link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/>
+
+<script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+<script type="text/javascript" src="../build/accordion-slider.js"></script>
+
+<script type="text/javascript">
+	document.addEventListener( 'DOMContentLoaded', () => {
+		const accordion = new AccordionSlider( '#example4', {
+			width: 960,
+			height: 350,
+			closePanelsOnMouseOut: false,
+			shadow: false,
+			panelDistance: 10,
+			autoplay: false,
+			mouseWheel: false
+		});
+
+		window.accordion = accordion;
+	});
+</script>
+
+</head>
+
+<body>
+	
+	<!-- Accordion Slider -->
+
+	<div id="example4" class="accordion-slider">
+		<div class="as-panels">
+
+			<!-- Panel 1 -->
+	        <div class="as-panel">
+	        	<div class="as-layer text" data-width="235" data-height="350">
+	        		<p class="title">Cathedral</p>
+					<div class="description">
+						<p>The film is based on a short story by Jacek Dukaj under the same title. In 2002 "Cathedral" was awarded the main prize at SIGGRAPH festival. A year later it received an Oscar nomination in the category "Best Animated Short Film".</p>
+						<p>Synopsis: Story of a pilgrim who comes to the Cathedral on the border of the known world. He wants to find answers. He finds tranquility.</p>
+					</div>
+					<p class="link">Source: <a href="https://www.youtube.com/watch?v=msIjWthwWwI" target="_blank">youtube.com/</a></p>
+	        	</div>
+				<div class="as-layer" data-horizontal="245">
+					<iframe class="as-video" src="//www.youtube.com/embed/msIjWthwWwI?enablejsapi=1&amp;wmode=opaque&rel=0" width="500" height="350" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+	        <!-- Panel 2 -->
+	        <div class="as-panel">
+	        	<div class="as-layer text" data-width="235" data-height="350">
+	        		<p class="title">Open Education</p>
+					<div class="description">
+						<p>A video made about a topic close to our hearts - Open Education! Blink Tower is a small team based in Cape Town, South Africa - and we love making explainer videos!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+					</div>
+					<p class="link">Source: <a href="https://vimeo.com/43401199" target="_blank">vimeo.com</a></p>
+	        	</div>
+				<div class="as-layer" data-horizontal="245">
+					<iframe class="as-video" src="//player.vimeo.com/video/43401199" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<!-- Panel 3 -->
+	        <div class="as-panel">
+	        	<div class="as-layer text" data-width="235" data-height="350">
+	        		<p class="title">Big Buck Bunny</p>
+					<div class="description">
+						<p>As a follow-up to the successful project Orange's "Elephants Dream", the Blender Foundation initiated another open movie project. Again a small team (7) of the best 3D artists and developers in the Blender community have been invited to come together to work in Amsterdam from October 2007 until April 2008 on completing a short 3D animation movie.</p>
+					</div>
+					<p class="link">Source: <a href="https://www.bigbuckbunny.org" target="_blank">bigbuckbunny.org</a></p>
+	        	</div>
+				<div class="as-layer" data-horizontal="245">
+					<video id="video3" class="as-video" controls="controls" preload="none" width="500" height="350"
+						   poster="https://bqworks.net/products/assets/videos/bbb/bbb-poster.jpg">
+						<source src="https://bqworks.net/products/assets/videos/bbb/bbb-trailer.mp4" type='video/mp4'/>
+						<source src="https://bqworks.net/products/assets/videos/bbb/bbb-trailer.ogg" type='video/ogg'/>
+					</video>
+				</div>
+			</div>
+
+	        <!-- Panel 4 -->
+	        <div class="as-panel">
+	        	<div class="as-layer text" data-width="235" data-height="350">
+	        		<p class="title">Sintel</p>
+					<div class="description">
+						<p>"Sintel" is an independently produced short film, initiated by the Blender Foundation as a means to further improve and validate the free/open source 3D creation suite Blender.</p>
+						<p>This 15 minute film has been realized in the studio of the Amsterdam Blender Institute. In addition to that, several crucial technical and creative targets have been realized online.</p>
+					</div>
+					<p class="link">Source: <a href="https://www.sintel.org/" target="_blank">sintel.org</a></p>
+	        	</div>
+				<div class="as-layer" data-horizontal="245">
+					<div class="as-video" data-videojs-id="video2">
+						<video id="video2" class="video-js vjs-default-skin" poster="https://bqworks.net/products/assets/videos/sintel/sintel-poster.jpg" width="500" height="350" controls="controls" preload="none" data-setup="{}">
+							<source src="https://bqworks.net/products/assets/videos/sintel/sintel-trailer.mp4" type="video/mp4"/>
+							<source src="https://bqworks.net/products/assets/videos/sintel/sintel-trailer.ogv" type="video/ogg"/>
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	
+	<!-- End of Accordion Slider -->
+
+    <div class="controls">
+    	Open panel: <a href="#example4/0">1</a>, <a href="#example4/1">2</a>, <a href="#example4/2">3</a>, <a href="#example4/3">4</a> 
+    	or <a href="#" onclick="window.accordion.closePanels(); return false;">close all panels</a>
+    </div>
+
+</body>
+</html>

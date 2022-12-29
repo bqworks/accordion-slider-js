@@ -1,0 +1,31 @@
+.as-layer {
+	position: absolute;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.as-black {
+	color: #fff;
+	background: rgb(0 0 0);
+	background: rgba(0 0 0 / 70%);
+}
+
+.as-white {
+	color: #000;
+	background: rgb(255 255 255);
+	background: rgba(255 255 255 / 70%);
+}
+
+.as-rounded {
+	border-radius: 10px;
+}
+
+.as-padding {
+	padding: 10px;
+}
+
+.as-layer.as-vertical {
+	transform-origin: left bottom;
+	transform: rotate(-90deg) translateY(100%);
+}

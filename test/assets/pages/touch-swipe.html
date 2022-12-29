@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>Accordion Slider</title>
+
+<link rel="stylesheet" type="text/css" href="../../../src/core/accordion-slider.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="../../../src/core/buttons.css" media="screen"/>
+
+<script type="module">
+	import AccordionSlider from '../../../src/core/accordion-slider.js';
+	import TouchSwipe from '../../../src/add-ons/touch-swipe/touch-swipe.js';
+	import Buttons from '../../../src/add-ons/buttons/buttons.js';
+
+	document.addEventListener( 'DOMContentLoaded', () => {
+		const accordion = new AccordionSlider( '#my-accordion', {
+			addOns: [ TouchSwipe, Buttons ],
+			width: '100vw',
+			height: '100vh',
+			visiblePanels: 3
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="my-accordion" class="accordion-slider">
+		<div class="as-panels">
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+			<div class="as-panel">
+				<img class="as-background" src="../images/default.gif"/>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.accordion-slider {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.as-no-js {
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.as-mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.as-panels {
+	position: absolute;
+	height: 100%;
+}
+
+.as-vertical .as-panels {
+	width: 100%;
+}
+
+.as-panel {
+	position: absolute;
+	overflow: hidden;
+	height: 100%;
+	width: auto;
+}
+
+.as-overlap .as-panel {
+	overflow: visible;
+}
+
+.as-vertical .as-panel {
+	width: 100%;
+	height: auto;
+}
+
+.as-shadow {
+	box-shadow: -5px 0 40px 1px #000;
+}
+
+.as-background,
+.as-background-opened {
+	border: none;
+	height: 100%;
+	width: auto;
+}
+
+.as-vertical .as-background,
+.as-vertical .as-background-opened {
+	width: 100%;
+	height: auto;
+}
+
+.as-background-opened {
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+
+.accordion-slider .as-background,
+.accordion-slider .as-background-opened {
+	max-width: none !important;
+	max-height: none !important;
+	border: none !important;
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-shadow: none !important;
+	transition: none;
+}
+
+.accordion-slider a {
+	position: static;
+	transition: none !important;
+}
+
+.accordion-slider iframe,
+.accordion-slider object,
+.accordion-slider video,
+.accordion-slider embed,
+.accordion-slider canvas {
+	max-width: none;
+	max-height: none;
+}

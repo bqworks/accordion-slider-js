@@ -1,0 +1,95 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+#example1 .panel-counter {
+	padding: 5px;
+	font-size: 20px;
+	color: #333;
+}
+
+@media (max-width: 860px) {
+	#example1.custom-responsive .panel-counter {
+		font-size: 16px;
+		padding: 2px;
+		bottom: 2px !important;
+		left: 2px !important;
+	}
+
+	#example1.custom-responsive .hide-medium-screen,
+	#example3 .hide-medium-screen {
+		display: none;
+	}
+}
+
+@media (max-width: 640px) {
+	#example1.custom-responsive .as-layer,
+	#example3.as-horizontal .as-layer {
+		font-size: 12px;
+	}
+
+	#example1.custom-responsive .hide-small-screen,
+	#example3 .hide-small-screen {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	#example1.custom-responsive .as-layer,
+	#example3.as-horizontal .as-layer {
+		font-size: 10px;
+		padding: 2px;
+	}
+}
+
+#example3 .as-panel {
+	border: 2px solid #333;
+	box-sizing: border-box;
+}
+
+#example4 .text {
+	padding: 15px;
+	background-color: #f1f1f1;
+	color: #222;
+}
+
+#example4 .title {
+	font-size: 24px;
+	margin: 0;
+}
+
+#example4 .description {
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+#example4 .link {
+	position: absolute;
+	bottom: 0;
+}
+
+#example4 .link a {
+	color: #000;
+}
+
+#example-xml .as-panel-counter {
+	padding: 5px;
+	font-size: 20px;
+	color: #333;
+	transform-origin: left bottom;
+	transform: rotate(-90deg) translateY(100%);
+}
+
+.controls {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.controls a {
+	color: #333;
+}
+
+.controls span.custom-arrow {
+	display: none;
+}

@@ -1,3 +1,9 @@
+[![npm version](https://img.shields.io/npm/v/accordion-slider-js)](https://www.npmjs.com/package/accordion-slider-js)
+[![License](https://img.shields.io/github/license/bqworks/accordion-slider-js)](https://github.com/bqworks/accordion-slider-js/blob/master/LICENSE)
+[![Build](https://github.com/bqworks/accordion-slider-js/actions/workflows/build.yml/badge.svg)](https://github.com/bqworks/accordion-slider-js/actions/workflows/build.yml)
+[![Tests](https://github.com/bqworks/accordion-slider-js/actions/workflows/test.yml/badge.svg)](https://github.com/bqworks/accordion-slider-js/actions/workflows/test.yml)
+[![Downloads](https://img.shields.io/npm/dt/accordion-slider-js)](https://github.com/bqworks/accordion-slider-js)
+
 # Accordion Slider JS #
 
 A JavaScript accordion slider that is __modular__, __dependency-free__, __rich-featured__, __flexible__ and __easy to use__. 
@@ -35,6 +41,13 @@ You can either load the minimized JS and CSS files in your HTML or you can impor
 ```html
 <link rel="stylesheet" href="accordion-slider-js/build/accordion-slider.css"/>
 <script type="text/javascript" src="accordion-slider-js/build/accordion-slider.js"></script>
+```
+
+From unpkg.com:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/accordion-slider-js/build/accordion-slider.css"/>
+<script type="text/javascript" src="https://unpkg.com/accordion-slider-js/build/accordion-slider.js"></script>
 ```
 
 Alternatively you can import the accordion's core and each add-on from the `accordion-slider-js` package.

@@ -9,7 +9,7 @@ import Layers from '../src/add-ons/layers/layers.js';
 import LazyLoading from '../src/add-ons/lazy-loading/lazy-loading.js';
 import Retina from '../src/add-ons/retina/retina.js';
 import TouchSwipe from '../src/add-ons/touch-swipe/touch-swipe.js';
-import SwapBackground from '../src/add-ons/swap-background/swap-background';
+import SwapBackground from '../src/add-ons/swap-background/swap-background.js';
 import MouseWheel from '../src/add-ons/mouse-wheel/mouse-wheel.js';
 import Video from '../src/add-ons/video/video.js';
 

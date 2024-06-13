@@ -28,7 +28,9 @@ describe( 'example 3', () => {
     test( 'should load the lazy loaded image when navigating to the next page', async () => {
         await page.click( '.as-pagination-button:nth-child(2)' );
 
-        await page.waitForTimeout( 100 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 100);
+    });
 
         const imagesSources = await page.$$eval( '.as-background', imagesEl => imagesEl.map( imageEl => imageEl.getAttribute( 'src' ) ) );
 
@@ -44,7 +46,9 @@ describe( 'example 3', () => {
         await page.mouse.down();
         await page.mouse.move( 100, 100, { steps: 20 } );
         await page.mouse.up();
-        await page.waitForTimeout( 1000 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
 
         const isButtonSelected = await page.$eval( '.as-pagination-button:nth-child(3)', buttonEl => buttonEl.classList.contains( 'as-selected' ) );
 
@@ -53,7 +57,9 @@ describe( 'example 3', () => {
 
     test( 'should apply the corresponding breakpoint settings when the page scales down', async () => {
         await page.setViewport( { width: 700, height: 400 } );
-        await page.waitForTimeout( 500 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const totalPanels = await page.$eval( '.accordion-slider', accordionEl => accordionEl.getElementsByClassName( 'as-panel' ).length );
         const visiblePanels = 3;
@@ -78,7 +84,9 @@ describe( 'example 3', () => {
             await page.mouse.down();
             await page.mouse.move( 200, 200, { steps: 20 } );
             await page.mouse.up();
-            await page.waitForTimeout( 1000 );
+            await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
         }
 
         const isButtonSelected = await page.$eval( '.as-pagination-button:nth-child(1)', buttonEl => buttonEl.classList.contains( 'as-selected' ) );
@@ -88,7 +96,9 @@ describe( 'example 3', () => {
 
     test( 'should apply the correct breakpoint settings when the page resizes', async () => {
         await page.setViewport( { width: 600, height: 400 } );
-        await page.waitForTimeout( 500 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const totalPanels = await page.$eval( '.accordion-slider', accordionEl => accordionEl.getElementsByClassName( 'as-panel' ).length );
         const visiblePanels = 4;

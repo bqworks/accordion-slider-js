@@ -19,7 +19,9 @@ describe( 'lazy-loading add-on', () => {
     test( 'should load the images in the new panels after navigating to a new page', async () => {
         await page.click( '.as-pagination-button:nth-child(2)' );
 
-        await page.waitForTimeout( 100 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 100);
+    });
 
         const imagesSources = await page.$$eval( '.as-background', imagesEl => imagesEl.map( imageEl => imageEl.getAttribute( 'src' ) ) );
 

@@ -5,7 +5,9 @@ describe( 'touch swipe add-on (puppeteer)', () => {
     });
 
     test( 'should navigate to the correct page on mouse drag', async () => {
-        await page.waitForTimeout( 1000 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
 
         await page.mouse.move( 300, 300 );
         await page.mouse.down();
@@ -16,7 +18,9 @@ describe( 'touch swipe add-on (puppeteer)', () => {
 
         expect( isButtonSelected ).toBe( true );
 
-        await page.waitForTimeout( 1000 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
 
         await page.mouse.move( 300, 300 );
         await page.mouse.down();

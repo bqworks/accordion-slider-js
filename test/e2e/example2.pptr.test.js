@@ -7,7 +7,9 @@ describe( 'example 2', () => {
 
     test( 'should have the size of the accordion set to the size of the viewport', async () => {
         await page.setViewport( { width: 800, height: 400, deviceScaleFactor: 2 } );
-        await page.waitForTimeout( 500 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         let accordionWidth = await page.$eval( '.accordion-slider', accordionEl => accordionEl.clientWidth );
 
@@ -19,7 +21,9 @@ describe( 'example 2', () => {
 
         for ( let i = 0; i < totalPanels; i++ ) {
             await page.keyboard.press( 'ArrowRight' );
-            await page.waitForTimeout( 1000 );
+            await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
         }
 
         const isLastPanelOpened = await page.$eval( `.as-panel:nth-child(${ totalPanels })`, panelEl => panelEl.classList.contains( 'as-opened' ) );
@@ -43,7 +47,9 @@ describe( 'example 2', () => {
             expect( openedPanelBackgroundVisibility ).toBe( 'visible' );
 
             await page.keyboard.press( 'ArrowLeft' );
-            await page.waitForTimeout( 1000 );
+            await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
         }
     });
 });

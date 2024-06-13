@@ -5,7 +5,9 @@ describe( 'layers add-on', () => {
     });
 
     test( 'should have the layers visible for the initial slide', async () => {
-        await page.waitForTimeout( 500 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 500);
+    });
 
         const layersVisibility = await page.$$eval( '.as-panel.as-opened .as-layer', layersEl => layersEl.map( layerEl => layerEl.style.visibility !== undefined && layerEl.style.visibility !== 'hidden' ? true : false ) );
 
@@ -34,7 +36,9 @@ describe( 'layers add-on', () => {
         expect( layersVisibility ).not.toContain( false );
 
         await page.keyboard.press( 'ArrowRight' );
-        await page.waitForTimeout( 1000 );
+        await await new Promise((resolve) => { 
+        setTimeout(resolve, 1000);
+    });
 
         layersVisibility = await page.$$eval( '.as-panel:nth-child(1) .as-layer', layersEl => layersEl.map( layerEl => layerEl.style.visibility !== undefined && layerEl.style.visibility !== 'hidden' ? true : false ) );
 

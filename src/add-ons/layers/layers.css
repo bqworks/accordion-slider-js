@@ -8,13 +8,13 @@
 .as-black {
 	color: #fff;
 	background: rgb(0 0 0);
-	background: rgba(0 0 0 / 70%);
+	background: rgb(0 0 0 / 70%);
 }
 
 .as-white {
 	color: #000;
 	background: rgb(255 255 255);
-	background: rgba(255 255 255 / 70%);
+	background: rgb(255 255 255 / 70%);
 }
 
 .as-rounded {
